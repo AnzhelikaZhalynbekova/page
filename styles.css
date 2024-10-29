@@ -1,0 +1,98 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4a4a72;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Стили навигационной панели */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon.active {
+    background-color: #555;
+}
+
+/* Стили карточки */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-content .location {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.card-content ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.card-content li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1em;
+    color: #555;
+}
+
+.card-content li:last-child {
+    border-bottom: none;
+}
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
